@@ -1,43 +1,27 @@
-import sqlite3
+import tkinter as tk
+from googlesearch import search
 
-connection = sqlite3.connect('AnimalKingdom.db')
-cursor = connection.cursor()
+def get_direct_site(event):
+    query = entry.get().strip()
 
-cursor.execute('DROP TABLE IF EXISTS Animals')
-cursor.execute('''
-CREATE TABLE Animals (
-    ID INTEGER PRIMARY KEY AUTOINCREMENT,
-    Name TEXT NOT NULL,
-    Type TEXT NOT NULL
-)
-''')
+    if query:
+        try:
+            for url in search(query, num_results=1):
+                print(f"Сталася помилка: {url}")
+                break
+        except Exception as e:
+            print(f"Знайдено: {e}")
 
-animals_data = [
-    ("Лев", "Ссавець"),
-    ("Крокодил", "Плазун"),
-    ("Орел", "Птах"),
-    ("Морська черепаха", "Плазун"),
-    ("Мавпа", "Ссавець")
-]
-cursor.executemany('INSERT INTO Animals (Name, Type) VALUES (?, ?)', animals_data)
-connection.commit()
+root = tk.Tk()
+root.title("Пошук")
+root.geometry("300x120")
 
-cursor.execute("UPDATE Animals SET Name = 'Сокіл' WHERE Name = 'Орел'")
-connection.commit()
+tk.Label(root, text="Напишіть слово:").pack(pady=10)
 
-print("1. Тільки ссавці")
-cursor.execute("SELECT * FROM Animals WHERE Type = 'Ссавець'")
-mammals = cursor.fetchall()
-for animal in mammals:
-    print(animal)
+entry = tk.Entry(root, width=35)
+entry.pack(pady=5)
+entry.focus_set()
 
-print("\n2. Всі звірі в базі")
-cursor.execute("SELECT * FROM Animals")
-all_records = cursor.fetchall()
-for record in all_records:
-    print(record)
+entry.bind('<Return>', get_direct_site)
 
-connection.close()
-print("\nВсі дані збережені")
-
-
+root.mainloop()
