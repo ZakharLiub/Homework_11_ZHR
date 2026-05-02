@@ -6,15 +6,15 @@
   </component>
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="false" />
+    <value-preview-text-wrapping value="true" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseAssistantManager">
     <assistants>
-      <assistant-state connection-id="6ca9cb00-f1b1-4f7d-aed1-0000d4c9b058" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
+      <assistant-state connection-id="6a5a7898-ec9e-470a-9de9-78f5de78da6b" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
         <tools />
       </assistant-state>
-      <assistant-state connection-id="6ca9cb00-f1b1-4f7d-aed1-0000d4c9b058" assistant-type="PUBLIC" default-profile-name="" selected-chat-id="" availability="AVAILABLE" acknowledgement="NONE" selected="true">
+      <assistant-state connection-id="6a5a7898-ec9e-470a-9de9-78f5de78da6b" assistant-type="PUBLIC" default-profile-name="" selected-chat-id="" availability="AVAILABLE" acknowledgement="NONE" selected="true">
         <tools />
       </assistant-state>
     </assistants>
@@ -29,8 +29,8 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="6ca9cb00-f1b1-4f7d-aed1-0000d4c9b058">
-      <console name="Connection" type="STANDARD" schema="" session="Main" />
+    <connection id="6a5a7898-ec9e-470a-9de9-78f5de78da6b">
+      <console name="Connection" type="STANDARD" schema="main" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -38,17 +38,17 @@
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
-      <object connection-id="6ca9cb00-f1b1-4f7d-aed1-0000d4c9b058" object-ref="schemas/AnimalKingdom/tables/Animals" />
+      <object connection-id="6a5a7898-ec9e-470a-9de9-78f5de78da6b" object-ref="schemas/main/tables/Animals" />
     </open-files>
   </component>
   <component name="DBNavigator.Project.DatabasePrerequisiteManager">
     <prerequisites />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="6ca9cb00-f1b1-4f7d-aed1-0000d4c9b058" />
+    <connection id="6a5a7898-ec9e-470a-9de9-78f5de78da6b" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="6ca9cb00-f1b1-4f7d-aed1-0000d4c9b058" dataset="AnimalKingdom.Animals" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="6a5a7898-ec9e-470a-9de9-78f5de78da6b" dataset="main.Animals" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
@@ -56,7 +56,7 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection source-id="" id="6ca9cb00-f1b1-4f7d-aed1-0000d4c9b058" active="true" signed="true">
+      <connection source-id="" id="6a5a7898-ec9e-470a-9de9-78f5de78da6b" active="true" signed="true">
         <database>
           <name value="Connection" />
           <description value="" />
@@ -76,7 +76,7 @@
           <protocol value="" />
           <url-parameters />
           <files>
-            <file path="C:\Users\Andriy\OneDrive\Робочий стіл\тато не удаляй!!!\ITSTEP~1\Homework (Git)\Homework_11_ZHR\AnimalKingdom.db" schema="AnimalKingdom" />
+            <file path="C:\Users\Andriy\OneDrive\Робочий стіл\тато не удаляй!!!\ITSTEP~1\Homework (Git)\Homework_11_ZHR\AnimalKingdom.db" schema="main" />
           </files>
           <type value="NONE" />
           <user value="" />
